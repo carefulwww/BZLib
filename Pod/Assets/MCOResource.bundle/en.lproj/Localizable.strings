@@ -1,0 +1,168 @@
+/*
+  Localizable.strings
+  MCOOverseasProject
+*/
+
+"sure"="Confirm";
+"agreen"="Confirm";
+"exitGame"="Quit game";
+"agreenTerm"="Agree to terms";
+
+"facebookLoginTip"="Facebook login status has expired, please log in again.";
+"googleLoginTip"="Google login status has expired, please log in again.";
+"appleLoginTip"="Apple login status has expired, please log in again.";
+
+"login"="Login";
+
+"otherLogin"="Change account";
+"changeAccountTitle"="Account switch";
+"changeAccountTip"="You will login to the game account in bottom and start your game.";
+
+"apple"="Apple";
+"google"="Google";
+"facebook"="Facebook";
+
+"facebookChangeAccountFail"="Facebook account switch failed";
+"googleChangeAccountFail"="Google account switch failed";
+"appleChangeAccountFail"="Apple account switch failed";
+
+"changeAccountLoseDataTip"="The current game data is not bound. Continuing to switch account may cause the current game data to be lost.";
+"cancelChange"="Cancel switch";
+"continueChange"="Switch ";
+
+"changeAccountFaliTip"="It is detected that the account has not changed. If you need to switch to another account, please log in with %@ account to switch.";
+"changeFacebookAccountFaliTip"="It is detected that the account has not changed. If you need to switch to another account, please log in with Facebook account to switch.";
+"changeGoogleAccountFaliTip"="It is detected that the account has not changed. If you need to switch to another account, please log in with Google account to switch.";
+"changeAppleAccountFaliTip"="It is detected that the account has not changed. If you need to switch to another account, please log in with Apple account to switch.";
+"changeEmailFailTip"="It is detected that the account has not changed. If you need to switch to another account, please log in with Email account to switch.";
+
+"bindAccountBtn"="Account bind";
+"accountChangeBtn"="Account switch";
+"relatedTerms"="Related Terms";
+"surveyItem"="Questionnaire";
+
+"goToSurvey"="Enter";
+
+"surveyCompleteTip"="After completing the questionnaire, the reward will be distributed by email";
+
+"accountNoBind"="This account is not bound to any game data, you will start a new game.";
+
+"bindAccountTitle"="Account bind";
+"bindAccountTip"="Binding accounts can reduce the risk of losing your account.";
+"bindAccountSuc"="Successful bound";
+"bindAccountFail"="This %@ account has been bound to game data";
+"bindFacebookAccountFail"="This Facebook account has been bound to game data";
+"bindGoogleAccountFail"="This Google account has been bound to game data";
+"bindAppleAccountFail"="This Apple account has been bound to game data";
+
+"tipTitle"="Related terms";
+"neojoyTitle"="Neojoy related terms";
+
+"welcomeTip"="Welcome back, ";
+"payTip"="Paying...";
+
+"copyUserNameSuc"="Copy successfully";
+
+"ruleTitle"="Related terms";
+"neojoyTipTitle"="Neojoy related terms";
+
+"closePolicyTip"="After closing the user related terms, you will exit the game. Agree to the terms and continue to play?";
+
+"netError"="Network Error";
+
+"gameCenter"="Game Community";
+
+"reorderTip"="We are trying to resend it to your account. If it does not take effect after 5 minutes, please contact the email kfwx@mujoy.sg";
+
+"countDownTip"="Time countdown : ";
+
+"suspendTitle"="Disabled notice : ";
+"suspendReason"="Disabled reason : ";
+"suspendAccount"="Disabled account : ";
+"suspendTime"="Disabled time : ";
+"suspendNote"="Remark : ";
+
+"completeTime"="Complete time : ";
+"completeRecord"="Complete record";
+
+"historySurveyTips"="You have not filled out questionnaire in past 180 days";
+
+"goToBind"="Bind";
+"bound"="Bound";
+"checkAccount"="View";
+
+"enterCorrectAccount"="Please enter correct account";
+"enterCorrectPassword"="Please enter correct password";
+
+"emailReg"="Email Enroll";
+"findPassword"="Forgot Pwd";
+"emailChange"="Switch email";
+"emailBind"="Bind email";
+"emailLogin"="Email Login";
+"bindNewEmail"="Bind new email";
+
+"sureChange"="Confirm";
+"sureBind"="Confirm";
+"sureModify"="Confirm";
+
+"account"="Account";
+
+"sendEmail"="Code has been sent to email";
+"sendCodeTip"="Please enter code";
+"inputNewPassword"="Enter new passward";
+
+"getCodeBtn"="Get code";
+
+"next"="Next";
+
+"noCodeBtn"="Failed to receive";
+"inputPasswordTip"="Enter 6-16 digit password";
+
+"countDownBtn"="Regain after 6s";
+
+"intoGame"="Loading game";
+
+"noCodeTips"="If failed to receive verification code,please check the spam list or go back to change email.";
+
+"inputCorrectEmail"="Please enter correct email account";
+
+"invalidAccount"="Invalid account";
+"usedAccount"="This account has been used";
+
+"regAgreenTerms"="By registering, you agree:Relevant Terms";
+
+"bindUsedAccount"="Bind own account";
+
+"emailLoginTip"="Email login status has expired, please log in again.";
+
+"copySuccess"="Copy successfully";
+
+"codeError"="Code Error";
+"codeInvalid"="Invalid code";
+"codeLimit"="Times for sending code have reached upper limit";
+
+"passwordLimit"="The times of password errors for today have reached the upper limit.";
+"codeLimit"="Times for sending code have reached upper limit";
+"emailChangeAccountFail"="Email account switch failed";
+"bindEmailAccountFail"="This email account has been bound to game data.";
+"emailBindTip"="Failed to bind Email account";
+
+"cancelAccountItem"="Account disabled";
+"cancel"="Cancel";
+"treatyCheckTip"="I have read and agree to the Disabling Game Account  Agreement";
+"sure"="Confirm";
+"roleNameAndTime"="[Character name] Last login time:";
+"checkUserInfo"="Make sure that the above information is consistent with the disabled account";
+"deleteTip"="Are you sure to delete the account? After deleting, you will not be able to log in to the account~";
+"countDownTips"="Your account has been disabled at <font color=\"#E55353\">%</font>, and we will keep it for <font color=\"#E55353\">$ days</font>. During this period, you can cancel the disablement; After this, you will not be able to log in to the account.<br><font color=\"#707070\">Note: If you are an auto-renewal subscriber, please cancel your subscription before canceling your account.</font>";
+"cancelCountDownTip"="After the countdown is over, you will not be able to log in to the account. Do you want to cancel the disable account? ";
+"cancelDeleteBtn"="Cancel";
+"knownBtn"="Confirm";
+"deleteUserCountDown"="Countdown Time: ";
+"cancelDeleteSuccess"="Cancel Disablement Successfully~";
+"noDeal"="No";
+"noCreateUserInfo"="This account has not created a character yet";
+
+"goSetting"="Settings";
+"settingMsg"="As you have not enabled any notifications, you may miss important information. Please tap \"Settings\" to enable it.";
+"settingTitle"="Turn on notifications";

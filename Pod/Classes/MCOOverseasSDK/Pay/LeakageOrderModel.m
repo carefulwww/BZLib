@@ -1,0 +1,28 @@
+//
+//  LeakageOrderModel.m
+//  MCOStandAlone
+//
+//  Created by 王都都 on 2019/9/2.
+//  Copyright © 2019 test. All rights reserved.
+//
+
+#import "LeakageOrderModel.h"
+
+@implementation LeakageOrderModel
+
+-(id)initWithShowInfor:(NSDictionary *)Infor{
+    if(self = [super init]){
+        [self setValuesForKeysWithDictionary:Infor];
+    }
+    return self;
+}
+
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    
+}
+
+-(id)valueForUndefinedKey:(NSString *)key{
+    return nil;
+}
+
+@end

@@ -1,0 +1,174 @@
+/* 
+  Localizable.strings
+  MCOOverseasProject
+
+  Created by 王都都 on 2021/1/28.
+  
+*/
+"sure"="확인";
+"agreen"="동의";
+"exitGame"="게임종료";
+"agreenTerm"="약관동의";
+
+"facebookLoginTip"="페이트북 계정 로그인 기간이 만료되어 다시 로그인 부탁드립니다.";
+"googleLoginTip"="구글 계정 로그인 기간이 만료되어 다시 로그인 부탁드립니다.";
+"appleLoginTip"="애플 계정 로그인 기간이 만료되어 다시 로그인 부탁드립니다.";
+
+"facebookBindTip"="페이스북 계정 연동 실패";
+"googleBindTip"="구글 계정 연동 실패";
+"appleBindTip"="애플 계정 연동 실패";
+
+"login"="로그인";
+
+"otherLogin"="계정 선택 하기";
+"changeAccountTitle"="계정변경";
+"changeAccountTip"="해당 계정을 로그인 하여 게임을 진행하게 됩니다.";
+
+"apple"="Apple";
+"google"="Google";
+"facebook"="Facebook";
+
+"facebookChangeAccountFail"="Facebook 계정 변경 실패";
+"googleChangeAccountFail"="Google 계정 변경 실패";
+"appleChangeAccountFail"="Apple 계정 변경 실패";
+
+"changeAccountLoseDataTip"="계정 연동이 되지 않은 상태이며 변경 시 현재 데이터가 사라지게 됩니다.";
+"cancelChange"="취소하기";
+"continueChange"="변경하기";
+
+"changeAccountFaliTip"="계정이 변경되지 않았습니다. %@에서 먼저 계정을 로그인 후 게임을 통하여 변경해 주세요";
+"changeFacebookAccountFaliTip"="계정이 변경되지 않았습니다. 페이스북에서 먼저 계정을 로그인 후 게임을 통하여 변경해 주세요";
+"changeGoogleAccountFaliTip"="계정이 변경되지 않았습니다. 구글에서 먼저 계정을 로그인 후 게임을 통하여 변경해 주세요";
+"changeAppleAccountFaliTip"="계정이 변경되지 않았습니다. 애플에서 먼저 계정을 로그인 후 게임을 통하여 변경해 주세요";
+
+"bindAccountBtn"="계정연동";
+"accountChangeBtn"="계정변경";
+"relatedTerms"="이용약관";
+"surveyItem"="설문 조사";
+
+"goToSurvey"="설문 조사 시작";
+
+"surveyCompleteTip"="설문 조사 보상은 메일로 지급해 드렸습니다";
+
+"accountNoBind"="해당 계정은 연동한 데이터가 확인되지 않아 처음부터 게임이 시작됩니다.";
+
+"bindAccountTitle"="계정연동";
+"bindAccountTip"="계정 연동 시 플레이하신 데이터 분실을 방지할 수 있습니다.";
+"bindAccountSuc"="연동성공!";
+"bindAccountFail"="该%@账号已经绑定过游戏数据";
+"bindFacebookAccountFail"="해당 페이스북 계정은 이미 다른 캐릭터가 연동되어 있습니다.";
+"bindGoogleAccountFail"="해당 구글 계정은 이미 다른 캐릭터가 연동되어 있습니다.";
+"bindAppleAccountFail"="해당 애플 계정은 이미 다른 캐릭터가 연동되어 있습니다.";
+
+"tipTitle"="운영정책";
+"neojoyTipTitle"="운영정책";
+
+"welcomeTip"="환영합니다.";
+"payTip"="결제 중";
+"restoreTip"="복구 중";
+
+"copyUserNameSuc"="복사 성공";
+
+"ruleTitle"="운영정책";
+
+"closePolicyTip"="이용약관을 닫으면 게임이 종료됩니다.";
+
+"netError"="네트워크 오류";
+
+"gameCenter"="커뮤니티";
+
+"reorderTip"="보상은 이미 보충 지급해 드렸습니다. 5분 후 미획득 시 메일로 연락해 주십시오.  kfwx@mujoy.sg";
+
+"countDownTip"="카운트다운 : ";
+
+"suspendTitle"="정지 통지 : ";
+"suspendReason"="이유 : ";
+"suspendAccount"="계정 차단 : ";
+"suspendTime"="정지 시간 : ";
+"suspendNote"="각주 : ";
+
+"completeTime"="완성 시간 : ";
+"completeRecord"="기록 완성";
+
+"historySurveyTips"="설문조사 협조 부탁드립니다.";
+
+"goToBind"="연동하기";
+"bound"="이미 연동";
+"checkAccount"="계정 확인";
+
+"enterCorrectAccount"="정확한 계정정보를 입력해주세요";
+"enterCorrectPassword"="정확한 비밀번호를 입력해주세요";
+
+"emailReg"="이메일 생성";
+"findPassword"="비번 찾기";
+"emailChange"="메일주소 변경";
+"emailBind"="메일 연동";
+"emailLogin"="로그인";
+"bindNewEmail"="연동 새 메일";
+
+"sureChange"="변경하기";
+"sureBind"="연동 확인";
+"sureModify"="수정하기";
+
+"account"="계정";
+
+"sendEmail"="메일로 인증번호 발송";
+"sendCodeTip"="인증번호 입력";
+"inputNewPassword"="새 비밀번호";
+
+"getCodeBtn"="인증번호 받기";
+
+"next"="다음";
+
+"noCodeBtn"="인증번호 받지 못함";
+"inputPasswordTip"="비밀번호 설정(숫자, 문자 6~16자)";
+
+"countDownBtn"="6초 후 재시도";
+
+"intoGame"="게임시작";
+
+"noCodeTips"="인증 번호를 받지 못하실 경우 스팸함 또는 이전 단계로 돌아가 다른 이메일 주소를 이용해 주시기 바랍니다.";
+
+"inputCorrectEmail"="올바른 메일주소 입력";
+
+"invalidAccount"="해당 계정은 존재하지 않습니다.";
+"usedAccount"="해당 계정은 이미 사용 중입니다";
+
+"regAgreenTerms"="계정 생성 시 동의:<관련 약관>";
+
+"bindUsedAccount"="기존 계정 연동";
+
+"emailLoginTip"="이메일 계정 로그인 기간이 만료되어 다시 로그인 부탁드립니다.";
+
+"copySuccess"="복사 성공";
+
+"codeError"="인증번호 오류";
+"codeInvalid"="인증번호 기간 만료";
+"codeLimit"="인증번호 발송 횟수 초과";
+
+"passwordLimit"="오늘의 잘못된 비밀번호 입력 제한 횟수를 초과했습니다.";
+"codeLimit"="인증번호 발송 횟수 초과";
+
+"emailChangeAccountFail"="Email계정 변경 실패";
+"bindEmailAccountFail"="해당 이메일은 이미 기타 게임 데이터에 연동되어 있습니다.";
+"emailBindTip"="Email 계정 연동 실패";
+
+"cancelAccountItem"="계정탈퇴";
+"cancel"="취소";
+"treatyCheckTip"="<게임 계정 탈퇴 안내>를 읽었으며 동의합니다";
+"sure"="확인";
+"roleNameAndTime"="[캐릭터] 최종 접속 시간 : ";
+"checkUserInfo"="상위 내용이 탈퇴 정보와 일치여부를 확인하세요";
+"deleteTip"="정말로 탈퇴를 진행하시겠습니다? 탈퇴 완료 후 모든 데이터가 삭제되고 복구할 수 없습니다";
+"countDownTips"="계정 탈퇴가 <font color=\"#E55353\">%</font>에 완료됩니다. 탈퇴 처리 기간은 <font color=\"#E55353\">$일이며</font> 탈퇴 완료 시 해당 계정의 모든 데이터가 삭제됩니다.<br><font color=\"#707070\">비고 : 구독 자동 연장 가입자는 계정 탈퇴 전에 먼저 구독을 취소해 주시기 바랍니다. </font>";
+"cancelCountDownTip"="탈퇴 카운트 완료 시 모든 데이터가 삭제됩니다. 탈퇴를 취소하시겠나요?";
+"cancelDeleteBtn"="탈퇴 취소";
+"knownBtn"="알겠습니다";
+"deleteUserCountDown"="탈퇴 카운트：";
+"cancelDeleteSuccess"="탈퇴 취소 성공";
+"noDeal"="유지하기";
+"noCreateUserInfo"="캐릭터 생성 이력이 없습니다.";
+
+"goSetting"="설정하기 ";
+"settingMsg"="알림 설정을 통하여 중요한 소식을 받을 수 있습니다. 설정하기를 눌러 알림을 활성화할 수 있습니다.";
+"settingTitle"="알림 설정 안내";

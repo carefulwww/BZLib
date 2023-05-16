@@ -1,0 +1,237 @@
+//
+//  MCOOverSDKPrefixHeader.pch
+//  MCOOverseasProject
+//
+
+#ifndef MCOOverseasSDKPrefixHeader_pch
+#define MCOOverseasSDKPrefixHeader_pch
+
+//#define MCOSDKBaseURL @"http://ioshk-test-api.m-co.cn"
+//#define MCOSDKBaseURL @"https://ioshk-api.m-co.cn" //欲望都市韩国 神兽海外
+//#define MCOSDKBaseURL @"https://ios-api.neojoygames.com" //nejoy 影子新娘 欲望都市日本
+//#define MCOSDKBaseURL @"https://ios-api.metajoygames.com"//metajoy 第七幻域 战火使命
+#define MCOSDKBaseURL @"http://ioshk-pre-api.m-co.cn" //海外测试环境
+//#define MCOSDKBaseURL @"https://ios-api.normalmove.com" //NormalMove
+
+#define MCOSDKVersion @"1.8.8.1"
+
+#define MCOIAPVerifyReceiptSandboxAPI @"https://sandbox.itunes.apple.com/verifyReceipt" //沙盒测试环境验证
+#define MCOIAPVerifyReceiptProxAPI @"https://buy.itunes.apple.com/verifyReceipt" //正式环境验证
+
+#import "MCOAppleLogin.h"
+#import "MCOOSSDKCenter.h"
+#import "OnekeyLoginVC.h"
+#import "UIColor+UIColor_Hex_color.h"
+#import "ThirdLoginModel.h"
+#import "ThirdLoginBtn.h"
+#import "PersonalCenterVC.h"
+#import "BindAccountVC.h"
+#import "ChangeAccountVC.h"
+#import "MCOLoginManager.h"
+#import "CommunityCenterVC.h"
+#import "AppBtn.h"
+#import "AppBtnModel.h"
+#import "MCOVerifyReceipt.h"
+
+#import "AFNetworking.h"
+#import "HttpRequest.h"
+#import "GetDeviceData.h"
+
+#import "MCOFBLoginManager.h"
+#import "TopAlertView.h"
+
+#import "publicMath.h"
+#import "MBProgressHUD+Add.h"
+#import "MCOSAMKeychain.h"
+
+#import "AlertVC.h"
+
+#import "GameProductModel.h"
+#import "GetDeviceData.h"
+#import "MCOApplePay.h"
+#import "NSString+Base64.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Add.h"
+#import "PayOrderModel.h"
+#import "LeakageOrderModel.h"
+#import "BindAccountTipVC.h"
+
+#import "MCOClause.h"
+#import "RuleVC.h"
+#import "ChangeAccountTipVC.h"
+#import "DisagreenTipVC.h"
+#import "TouristChangeAccountTipVC.h"
+#import "SurveyCenterVC.h"
+#import "NoSurveyVC.h"
+#import "HistorySurveyVC.h"
+#import "MCOSuspendVC.h"
+
+#import "MCOEmailChangeVC.h"
+#import "MCOEmailGetCodeVC.h"
+#import "MCOEmailInputCodeVC.h"
+#import "MCOEmailInputPasswordVC.h"
+#import "MCOEmailLoginVC.h"
+#import "MCOEmailBindVC.h"
+#import "MCONaverCenter.h"
+
+#import "MCOVerifyReceipt.h"
+
+#import "MCOPushVC.h"
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define SERVICEFORMPORTRAITSIZE CGSizeMake(MCOSWidth,MCOSHeight)  //竖屏宽高
+#define SERVICEFORMLANDSCAPESIZE CGSizeMake(MCOSHeight,MCOSWidth) //横屏宽高
+
+
+#define MCO_SDKSetting @"/login/ios/hwinits" //初始化
+#define MCO_FirstActive @"/device/active" //设备激活
+
+#define MCO_Login_StandAlone @"/v1.4.1/login/hwStandAlone" //自动登录
+#define MCO_Login_Token @"/v1.4.1/login/hw"//token登录接口
+#define MCO_Third_Login @"/v1.4.1/login/hwThirdAccount"  //第三方登录
+
+#define MCO_CreatedOrder @"/order/ios/addStandalone" //生成订单
+#define MCO_IOS_Pay @"/order/ios/pay" //IOS支付成功上报
+#define MCO_Login_BindThirdAccount @"/v1.4.1/login/hwBindThirdAccount" //绑定第三方账号
+#define MCO_AutoSubscriptionOrder @"/order/ios/iosAutoSubStandalone"//自动订阅
+#define MCO_Report_Receipt @"/order/ios/reportReceipt"
+#define MCO_Survey_Open @"/survey/isOpen" //用户是否开启问卷
+#define MCO_Get_Surveys @"/survey/getSurvey" //获取相关问卷信息
+#define MCO_Get_History_Surveys @"/survey/getOldSurvey" //获取历史问卷
+#define MCO_Push_Message @"/message/hw/push"//消息推送
+#define MCO_Push_Token @"/message/hw/bindToken" //消息推送token
+
+//1.4.1版本
+#define MCO_Verify_Code     @"/v1.4.1/login/hwThirdAccountVerifyCode" // 发送验证邮件
+#define MCO_Reg_User_Check  @"/v1.4.1/login/hwusernamecheck"  //注册用户验证
+#define MCO_Code_Verfiy     @"/v1.4.1/login/hwThirdAccountVerifyCodeCheck" //验证码验证
+#define MCO_Password_Modify @"/v1.4.1/login/hwThirdAccountPasswordModify"//密码修改
+
+//1.6.2
+#define MCO_Get_Cancel_Time @"/login/getHwAccountCancelTime"//获取账号注销剩余时间
+#define MCO_Get_Role_Info   @"/login/getHwRoleInfo" //获取游戏账号下的角色信息
+#define MCO_Delete_Account  @"/login/deleteHwAccount" //注销账号
+#define MCO_Cancel_Delete   @"/login/cancelDeleteHwAccount" //取消注销账号操作
+
+//获取服务端时间
+#define MCO_GetCurrent_Time @"/api/getCurrentTime"
+
+#define MCO_Booking_Info_Report @"/order/ios/pre"
+
+
+#define MCO_Main_Theme_Color  @"#E55353"
+#define MCO_Grey_Color        @"#707070"
+#define MCO_Background_Color  @"#F8F8F8"
+#define MCO_Grey_Text         @"#3B3B3B"
+#define MCO_Survey_Tip_Color  @"#949494"
+#define MCO_Gray_Bounds       @"#DBDBDB"
+#define MCO_Text_Gray         @"#272727"
+#define MCO_Btn_Gray          @"#A1A1A1"
+#define MCO_Btn_Text_Gray     @"#ADADAD"
+#define MCO_CheckTip_Gray     @"#606060"
+#define MCO_Gray_Color        @"#707070"
+#define MCO_CountDown_Gray    @"#696969"
+
+#define MCO_KVNProgressView @"MCOResource.bundle/KVNProgressView"
+
+#define MCO_Apple_Face    @"MCOResource.bundle/apple_face"
+#define MCO_Google_Face   @"MCOResource.bundle/google_face"
+#define MCO_Facebook_Face @"MCOResource.bundle/facebook_face"
+#define MCO_Email_Face    @"MCOResource.bundle/email_face"
+
+#define MCO_APPLE_ICON    @"MCOResource.bundle/apple_icon"
+#define MCO_GOOGLE_ICON   @"MCOResource.bundle/google_icon"
+#define MCO_FACEBOOK_ICON @"MCOResource.bundle/facebook_icon"
+
+#define MCO_Apple_Selected     @"MCOResource.bundle/apple_selected"
+#define MCO_Google_Selected    @"MCOResource.bundle/google_selected"
+#define MCO_Facebook_Selected  @"MCOResource.bundle/facebook_selected"
+
+#define MCO_Back @"MCOResource.bundle/back"
+#define MCO_Back_Black @"MCOResource.bundle/back_black"
+
+#define MCO_Terms @"MCOResource.bundle/terms"
+#define MCO_User_Change @"MCOResource.bundle/user_change"
+#define MCO_User_Bind @"MCOResource.bundle/user_bind"
+#define MCO_User_Red @"MCOResource.bundle/user_red"
+#define MCO_Floating_Btn @"MCOResource.bundle/floating_btn"
+#define MCO_Close @"MCOResource.bundle/close"
+
+#define MCO_App_Logo_White @"MCOResource.bundle/app_logo"
+#define MCO_App_Logo_Red @"MCOResource.bundle/app_logo_red"
+
+#define MCO_Person_Bg @"MCOResource.bundle/person_center_bg"
+#define MCO_Person_Bg_Horizon @"MCOResource.bundle/person_center_bg_horizon"
+#define MCO_Person_Go_Btn @"MCOResource.bundle/go_btn"
+
+#define MCO_Community_Center @"MCOResource.bundle/community_center"
+
+#define MCO_Fuzhi @"MCOResource.bundle/fuzhi"
+#define MCO_Fuzhi_Black @"MCOResource.bundle/fuzhi_black"
+
+#define MCO_WenJuan @"MCOResource.bundle/wenjuan"
+
+#define MCO_Circle @"MCOResource.bundle/circle"
+
+#define MCO_Black_Back @"MCOResource.bundle/black_back"
+
+#define MCO_Neojoy_Icon @"MCOResource.bundle/neojoy_icon"
+#define MCO_Metajoy_Icon @"MCOResource.bundle/metajoy_icon"
+#define MCO_Normalmove_Icon @"MCOResource.bundle/normalmove_icon"
+#define MCO_Neorigin_Icon @"MCOResource.bundle/normalmove_icon"
+
+#define MCO_NO_Survey_Image @"MCOResource.bundle/no_survey_image"
+
+#define MCO_AppleLogin_Btn @"MCOResource.bundle/apple_login"
+#define MCO_FBLogin_Btn @"MCOResource.bundle/facebook_login"
+#define MCO_EmailLogin_Btn @"MCOResource.bundle/email_login"
+#define MCO_GoogleLogin_Btn @"MCOResource.bundle/google_login"
+
+#define MCO_Hook @"MCOResource.bundle/hook"
+#define MCO_Cell_Close @"MCOResource.bundle/cell_close"
+#define MCO_Down @"MCOResource.bundle/down"
+#define MCO_Up @"MCOResource.bundle/up"
+
+
+#define MCO_Bind_Btn_Background @"MCOResource.bundle/bind_btn_background"
+
+#define MCO_GO_Black @"MCOResource.bundle/go_black"
+
+#define MCO_TextInput_Background @"MCOResource.bundle/textInputBackground"
+
+#define MCO_Email_Small_Image @"MCOResource.bundle/email_small_image"
+
+#define MCO_Password_Small_Image @"MCOResource.bundle/password_small_image"
+
+#define MCO_Shield_Small_Image @"MCOResource.bundle/shield"
+
+#define MCO_Open_Eyes_Small_Image @"MCOResource.bundle/close_eyes"
+
+#define MCO_Close_Eyes_Small_Image @"MCOResource.bundle/open_eyes"
+
+
+/**
+ 2022.6.17 修复代码添加 1.6.1注销账号功能
+ */
+#define MCO_Cancel_Btn_Image @"MCOResource.bundle/cancel_btn_bg"
+
+#define MCO_UnCheck_Btn_Image @"MCOResource.bundle/uncheck_btn"
+
+#define MCO_Check_Btn_Image @"MCOResource.bundle/check_btn"
+
+#define MCO_Cancel_Account_Image @"MCOResource.bundle/cancel_account_icon"
+
+
+#endif /* MCOOverSDKPrefixHeader_pch */
+
+//#ifdef DEBUG
+//# define MCOLog(fmt, ...) NSLog((@"\n\n"\
+//"-----------------MCOLog-----------------\n\n"\
+//        "Log: " fmt                     "\n\n"\
+//"---------------------------------------\n"), ##__VA_ARGS__);
+//#else
+//# define MCOLog(...);
+//#endif
+
+# define MCOLog(fmt, ...) [publicMath customLogWithString:[NSString stringWithFormat:fmt, ##__VA_ARGS__]]
