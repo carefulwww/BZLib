@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BZLib"
-  s.version          = "0.3.0"
+  s.version          = "0.4.0"
   s.summary          = "A short description of BZLib."
   s.description      = <<-DESC
                        An optional longer description of BZLib
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "wzx" => "673974693@qq.com" }
-  s.source           = { :git => "https://github.com/carefulwww/BZLib.git", :tag => '0.3.0' }
+  s.source           = { :git => "https://github.com/carefulwww/BZLib.git", :tag => '0.4.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '6.0'
@@ -37,7 +37,17 @@ Pod::Spec.new do |s|
   s.libraries  = 'z.1'
   s.dependency 'YSASIHTTPRequest', '~> 2.0.1'
   
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = {
+   # 'VALID_ARCHS' => 'x86_64 armv7 arm64'
+   'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7 armv7s arm64'
+    }
+
+  s.user_target_xcconfig = {
+    # 'VALID_ARCHS' => 'arm64',
+    'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => "armv7 armv7s arm64"
+  }
+
 
 end
